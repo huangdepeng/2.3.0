@@ -2,7 +2,7 @@
 /*
  hicbit_control package
 */
-//% weight=11 icon="\uf2c5" color=#7CCD7C
+//% weight=10 icon="\uf2c5" color=#7CCD7C
 namespace hicbit_control {
     
     /**
@@ -65,7 +65,7 @@ namespace hicbit_control {
 /*
  hicbit package
 */
-//% weight=10 icon="\uf180" color=#5F9EA0
+//% weight=9 icon="\uf180" color=#5F9EA0
 namespace hicbit {
 
     export let NEW_LINE = "\r\n";
@@ -462,7 +462,7 @@ namespace hicbit {
 /*
  Sensor package
 */
-//% weight=9 icon="\uf2db" color=#8470FF
+//% weight=8 icon="\uf2db" color=#8470FF
 namespace Sensor {
     
     export enum hicbit_Port {
@@ -1010,7 +1010,7 @@ namespace Sensor {
 /**
  * IR remote
  */
-//% color=50 weight=8
+//% color=50 weight=7
 //% icon="\uf1eb"
 namespace IR {
 
@@ -1052,7 +1052,7 @@ namespace IR {
 /**
  * RGB light
  */
-//% color=CD9B9B weight=7
+//% color=CD9B9B weight=6
 //% icon="\uf0eb"
 namespace RGB_light {
 
@@ -1142,7 +1142,7 @@ namespace RGB_light {
 /*
  Display package
 */
-//% weight=6 icon="\uf108" color=#6E8B3D
+//% weight=5 icon="\uf108" color=#6E8B3D
 namespace Display {
 
     export let NEW_LINE = "\r\n";
