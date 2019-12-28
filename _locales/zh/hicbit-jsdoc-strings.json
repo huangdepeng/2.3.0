@@ -1,5 +1,6 @@
 {
 	"hicbit_control.hicbit_Init":"hicbit板初始化，请在开机时执行",
+	"hicbit_control.hicbit_Arrowkeys": "判断方向（上下左右）按键被按下",
 	"hicbit_control.wait_s":"等待指定时间（秒）",
 	"hicbit_control.wait_ms":"等待指定时间（毫秒）",
 

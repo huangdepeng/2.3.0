@@ -1,6 +1,11 @@
 {
 	"{id:category}Hicbit_control": "Hicbit控制",
+	"hicbit_control.hicbit_key.up|block":"上",
+	"hicbit_control.hicbit_key.down|block":"下",
+	"hicbit_control.hicbit_key.left|block":"左",
+	"hicbit_control.hicbit_key.right|block":"右",
 	"hicbit_control.hicbit_Init|block": "初始化hicbit",
+	"hicbit_control.hicbit_Arrowkeys|block": "|%key|方向键按下",
 	"hicbit_control.wait_s|block":"等待|%s|（秒）",
 	"hicbit_control.wait_ms|block":"等待|%ms|（毫秒）",
 
@@ -18,10 +23,6 @@
 	"hicbit.hicbit_setMotorSpeed22|block":"设置电机C速度(-255~255)|%speed1|和电机D|速度 %speed2|",
 	"hicbit.hicbit_setMotorstop2|block":"让电机C和电机D停止",
 	"hicbit.hicbit_setMotorSpeed2|block": "设置电机C速度(-255~255)|%speed1|和电机D|速度 %speed2|时间(秒) %time|",
-	"hicbitLight.Light1|block":"彩灯1",
-	"hicbitLight.Light2|block":"彩灯2",
-	"hicbitLight.Light3|block":"彩灯3",
-	"hicbitLight.All|block":"全部",
 	
 	"{id:category}Sensor": "Hicbit传感器",
 	"Sensor.hicbit_Port.port1|block":"接口1",
@@ -58,6 +59,10 @@
 	"hicbit_Port_IR.port4|block":"接口4",
 
 	"{id:category}RGB_light": "Hicbit彩灯",
+	"hicbitLight.Light1|block":"彩灯1",
+	"hicbitLight.Light2|block":"彩灯2",
+	"hicbitLight.Light3|block":"彩灯3",
+	"hicbitLight.All|block":"全部",
 	"RGB_light.hicbit_Port.port1|block":"接口1",
 	"RGB_light.hicbit_Port.port2|block":"接口2",
 	"RGB_light.hicbit_Port.port3|block":"接口3",

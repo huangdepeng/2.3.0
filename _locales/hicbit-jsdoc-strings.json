@@ -35,6 +35,7 @@
   "hicbitRGBLight": "QbitRGBLight Functions",
   "hicbitRGBLight.LHhicbitRGBLight": "A LHQbitRGBLight class",
   "hicbitRGBPixelMode": "Different modes for RGB or RGB+W RGBLight QbitRGBColors",
+  "hicbit_control.hicbit_Arrowkeys": "Set the arrow keys",
   "hicbit_control.hicbit_Init": "hicbit initialization, please execute at boot time",
   "hicbit_control.wait_ms": "Pause for the specified time in milliseconds",
   "hicbit_control.wait_ms|param|ms": "how long to pause for, eg: 100, 200, 500",

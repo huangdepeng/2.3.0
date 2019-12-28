@@ -4,6 +4,17 @@
 */
 //% weight=10 icon="\uf2c5" color=#7CCD7C
 namespace hicbit_control {
+
+    export enum hicbit_key {
+        //% block="up"
+        up = 0x01,
+        //% block="down"
+        down = 0x02,
+        //% block="left"
+        left = 0x03,
+        //% block="right"
+        right = 0x04
+    }
     
     /**
      * hicbit initialization, please execute at boot time
@@ -57,6 +68,38 @@ namespace hicbit_control {
     //% blockId=wait_ms
     export function wait_ms(ms:number) {
         basic.pause(ms);
+    }
+
+    /**
+    * Set the arrow keys
+    */
+    //% weight=99 blockId=hicbit_Arrowkeys block="Arrow keys are|key %key"
+    export function hicbit_Arrowkeys(key: hicbit_key): boolean {
+        let status = 0;
+        let flag: boolean = false;
+        switch (key) {
+            case hicbit_key.up:
+                pins.setPull(DigitalPin.P5, PinPullMode.PullUp);
+                status = pins.digitalReadPin(DigitalPin.P5);
+                break;
+            case hicbit_key.down:
+                pins.setPull(DigitalPin.P6, PinPullMode.PullUp);
+                status = pins.digitalReadPin(DigitalPin.P6);
+                break;
+            case hicbit_key.left:
+                pins.setPull(DigitalPin.P7, PinPullMode.PullUp);
+                status = pins.digitalReadPin(DigitalPin.P7);
+                break;
+            case hicbit_key.right:
+                pins.setPull(DigitalPin.P9, PinPullMode.PullUp);
+                status = pins.digitalReadPin(DigitalPin.P9);
+                break;
+        }
+        if (status == 0)
+            flag = false;
+        else
+            flag = true;
+        return flag;
     }
 
 }
@@ -1052,7 +1095,7 @@ namespace IR {
 /**
  * RGB light
  */
-//% color=CD9B9B weight=6
+//% color=#CD9B9B weight=6
 //% icon="\uf0eb"
 namespace RGB_light {
 
